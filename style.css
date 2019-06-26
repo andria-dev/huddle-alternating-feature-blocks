@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+.Hero,
+.Main,
+.Footer {
+  width: calc(100% - 2rem);
+  padding: 1rem;
+}
+
+.Hero {
+  background-image: url(/images/bg-hero-mobile.svg);
+}
+
+/* DESKTOP */
+@media (min-width: 800px) {
+  .Hero {
+    background-image: url(/images/bg-hero-desktop.svg);
+  }
+}
