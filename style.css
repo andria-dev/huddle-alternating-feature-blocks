@@ -43,8 +43,8 @@ body {
   font-size: 0.75rem;
 }
 .Button[large] {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
 
   font-size: 1rem;
 }
@@ -127,6 +127,28 @@ body {
   align-items: center;
 }
 
+.Card {
+  display: flex;
+  flex-direction: column;
+
+  width: 40rem;
+  max-width: calc(100% - 8rem);
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  border-radius: 1rem;
+}
+.Card__title {
+}
+.Card__content {
+}
+.Card__illustration {
+  max-width: 100%;
+}
+
+.Main__overlap-card {
+}
+
 /* DESKTOP */
 @media (min-width: 800px) {
   html {
@@ -135,5 +157,12 @@ body {
 
   .Hero {
     background-image: url(/images/bg-hero-desktop.svg);
+  }
+
+  .Card {
+    flex-direction: row;
+  }
+  .Card--reverse {
+    flex-direction: row-reverse;
   }
 }
