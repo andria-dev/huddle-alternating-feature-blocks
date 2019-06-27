@@ -27,7 +27,6 @@ body {
 }
 
 /* BUTTON STYLES */
-
 .Button {
   background: none;
   font-weight: bold;
@@ -35,11 +34,9 @@ body {
   border: none;
   cursor: pointer;
 }
-
 .Button:focus {
   outline: 0;
 }
-
 .Button[small] {
   padding: 0.4rem 2rem;
 
@@ -51,66 +48,57 @@ body {
 
   font-size: 1rem;
 }
-
 .Button[color='primary'] {
   background-color: var(--primary);
   color: var(--primary-fg);
 }
-
 .Button[color='secondary'] {
   background-color: var(--secondary);
   color: var(--secondary-fg);
 }
-
 .Button--social {
   padding: 0.25rem;
 
   color: white;
   border: solid 1px white;
 }
-
 .Button[round] {
   border-radius: 30px;
 }
 
 /* HERO SECTION */
-
 .Hero {
   display: flex;
   flex-direction: column;
 
   background-image: url(/images/bg-hero-mobile.svg);
 }
-
 .Hero__header {
   display: flex;
   justify-content: space-between;
 
   margin-bottom: 4rem;
 }
-
 .Hero__content {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 
+  margin: 0 2rem;
+
   place-items: center;
 }
-
 .Hero__title {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
-
 .Hero__message {
   margin-bottom: 2rem;
 }
-
 .Hero__CTA {
   margin-bottom: 3rem;
   width: 20rem;
 }
-
 .Hero__illustration {
   width: 40rem;
   max-width: calc(100% - 4rem);
