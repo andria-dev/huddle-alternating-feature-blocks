@@ -71,38 +71,60 @@ body {
   display: flex;
   flex-direction: column;
 
-  background-image: url(/images/bg-hero-mobile.svg);
+  background-image: linear-gradient(
+      to bottom,
+      hsl(196, 95%, 95%, 0.5),
+      hsla(196, 95%, 95%, 0.35)
+    ),
+    url(/images/bg-hero-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .Hero__header {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 .Hero__content {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 
-  margin: 0 2rem;
+  margin-bottom: 2rem;
 
   place-items: center;
 }
 .Hero__title {
+  margin: 0 1rem 2rem;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
 }
 .Hero__message {
-  margin-bottom: 2rem;
+  margin: 0 0.5rem 2rem;
+
+  font-weight: 400;
+  line-height: 1.75rem;
 }
 .Hero__CTA {
-  margin-bottom: 3rem;
   width: 20rem;
+  max-width: calc(100% - 2rem);
+
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
 .Hero__illustration {
   width: 40rem;
   max-width: calc(100% - 4rem);
   margin: 0 auto;
+}
+
+/* CARDS */
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* DESKTOP */
