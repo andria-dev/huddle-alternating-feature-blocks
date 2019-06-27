@@ -1,5 +1,12 @@
 body {
+  --primary: #fe52c0;
+  --secondary: white;
+
+  --primary-fg: white;
+  --secondary-fg: black;
+
   margin: 0;
+  font-family: Helvetica, Roboto, Arial, system-font, sans-serif;
 }
 
 .Hero,
@@ -9,8 +16,81 @@ body {
   padding: 1rem;
 }
 
+.Logo {
+  height: 1.5rem;
+}
+
+/* BUTTON STYLES */
+
+.Button {
+  border: none;
+  background: none;
+
+  font-weight: bold;
+}
+
+.Button:focus {
+  outline: 0;
+}
+
+.Button[color='primary'] {
+  background-color: var(--primary);
+  color: var(--primary-fg);
+}
+
+.Button[color='secondary'] {
+  background-color: var(--secondary);
+  color: var(--secondary-fg);
+}
+
+.Button--social {
+  padding: 0.25rem;
+
+  color: white;
+  border: solid 1px white;
+}
+
+.Button[round] {
+}
+
+/* HERO SECTION */
+
 .Hero {
+  display: flex;
+  flex-direction: column;
+
   background-image: url(/images/bg-hero-mobile.svg);
+}
+
+.Hero__header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 4rem;
+}
+
+.Hero__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.Hero__title {
+  margin-bottom: 2rem;
+}
+
+.Hero__message {
+  margin-bottom: 2rem;
+}
+
+.Hero__CTA {
+  margin-bottom: 3rem;
+}
+
+.Hero__illustration {
+  width: 40rem;
+  max-width: calc(100% - 4rem);
+  margin: 0 auto;
 }
 
 /* DESKTOP */
