@@ -1,3 +1,10 @@
+html {
+  font-size: 16px;
+  font-family: Helvetica, Roboto, Arial, system-font, sans-serif;
+
+  text-align: center;
+}
+
 body {
   --primary: #fe52c0;
   --secondary: white;
@@ -6,7 +13,6 @@ body {
   --secondary-fg: black;
 
   margin: 0;
-  font-family: Helvetica, Roboto, Arial, system-font, sans-serif;
 }
 
 .Hero,
@@ -17,20 +23,33 @@ body {
 }
 
 .Logo {
-  height: 1.5rem;
+  height: 1.35rem;
 }
 
 /* BUTTON STYLES */
 
 .Button {
-  border: none;
   background: none;
-
   font-weight: bold;
+
+  border: none;
+  cursor: pointer;
 }
 
 .Button:focus {
   outline: 0;
+}
+
+.Button[small] {
+  padding: 0.4rem 2rem;
+
+  font-size: 0.75rem;
+}
+.Button[large] {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+
+  font-size: 1rem;
 }
 
 .Button[color='primary'] {
@@ -51,6 +70,7 @@ body {
 }
 
 .Button[round] {
+  border-radius: 30px;
 }
 
 /* HERO SECTION */
@@ -73,9 +93,12 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+
+  place-items: center;
 }
 
 .Hero__title {
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -85,6 +108,7 @@ body {
 
 .Hero__CTA {
   margin-bottom: 3rem;
+  width: 20rem;
 }
 
 .Hero__illustration {
@@ -95,6 +119,10 @@ body {
 
 /* DESKTOP */
 @media (min-width: 800px) {
+  html {
+    text-align: left;
+  }
+
   .Hero {
     background-image: url(/images/bg-hero-desktop.svg);
   }
